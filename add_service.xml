@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="801dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/image_upload"
+            android:layout_width="104dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/ic_baseline_camera_24" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/InputStyle"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Nombre Servicio"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_upload" />
+
+        <EditText
+            android:id="@+id/type"
+            style="@style/InputStyle"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Modalidad Física o Virtual"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dishes" />
+
+        <EditText
+            android:id="@+id/location"
+            style="@style/InputStyle"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Ubicacion"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <EditText
+            android:id="@+id/Category"
+            style="@style/InputStyle"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Categoria"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Ingredientes" />
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/InputStyle"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="Descripcion"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ResCategory" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPortada"
+            android:layout_width="322dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="-55dp"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="En Curso"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price" />
+
+        <Button
+            android:id="@+id/post"
+            style="@style/ButtonBig"
+            android:text="Publicar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxPortada"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
