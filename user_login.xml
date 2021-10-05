@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="731dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/inameLoginLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/ICDLine"
+            app:layout_constraintEnd_toStartOf="@+id/textLogin1"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+            app:srcCompat="@drawable/ic_line" />
+
+        <TextView
+            android:id="@+id/titleLogin"
+            style="@style/Titulo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/HomeBannerTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLoginBanner" />
+
+        <TextView
+            android:id="@+id/subTitleLogin"
+            style="@style/SubtituloLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/HomeBannerSubtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleLogin" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/ButtonDefault"
+            android:layout_marginTop="30dp"
+            android:text="@string/ButtonHomeLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textButtonForgotPassword" />
+
+        <ImageView
+            android:id="@+id/imageLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/ICDLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textLogin1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+            app:srcCompat="@drawable/ic_line" />
+
+        <TextView
+            android:id="@+id/textButtonRegister"
+            style="@style/SubtituloLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:onClick="createUser"
+            android:text="@string/CreateAccount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLoginFacebook"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <TextView
+            android:id="@+id/textLogin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/OtherLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+        <Button
+            android:id="@+id/buttonLoginGoogle"
+            style="@style/ButtonSmallGoogle"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/GoogleButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textLogin1" />
+
+        <EditText
+            android:id="@+id/inputLoginEmail"
+            style="@style/InputStyle"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/InputEmail"
+            android:importantForAutofill="no"
+            android:inputType="textWebEmailAddress"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subTitleLogin" />
+
+        <Button
+            android:id="@+id/buttonLoginFacebook"
+            style="@style/ButtonSmallFacebook"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/FacebookButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonLoginGoogle"
+            app:layout_constraintTop_toBottomOf="@+id/textLogin1" />
+
+        <ImageView
+            android:id="@+id/imageLoginBanner"
+            android:layout_width="205dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/ICDBanner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ahorro" />
+
+        <EditText
+            android:id="@+id/inputLoginPassword"
+            style="@style/InputStyle"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/InputPassword"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLoginEmail" />
+
+        <TextView
+            android:id="@+id/textButtonForgotPassword"
+            style="@style/SubtituloLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/ResetPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputLoginPassword" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
